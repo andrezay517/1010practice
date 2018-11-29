@@ -1,0 +1,328 @@
+/*comment format for CSS. Note the use of both id and class attributes*/
+
+#headlogo{
+    border: 3px solid black;
+    height: 100px;
+    margin: auto;
+    width: 98%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    background-color: rgb(255, 115, 0);
+}
+
+#headlogo a{
+    color: black;
+    position: relative;
+    top: 25%;
+}
+/*body background gradient*/
+#body{
+    background-image: linear-gradient(to bottom right,#08122D, rgba(95, 122, 211, 0.651));
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container a{
+    position: relative;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+#container h6{
+    display: none;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(255,115,0);
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    font-weight: bold;
+}
+
+/*id of button container*/
+#container{
+    width: 98%;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/*box ids for layout page buttons*/
+#box1{/*presses*/
+    width: 31%;
+    margin: auto;
+    border: 3px solid black;
+    height: 45%;
+    text-align: center;
+    vertical-align: center;
+    background-color: #08122D;
+    color: white;
+}
+#box1:link{
+    text-decoration: none;
+}
+#box1:hover{
+    background-image: url("images/press.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+}
+
+#box2{/*pulls*/
+    width: 31%;
+    margin: auto;
+    border: 3px solid black;
+    height: 45%;
+    text-align: center;
+    background-color: #08122D;
+    color: white;
+}
+#box2:link{
+    text-decoration: none;
+}
+#box2:hover{
+    background-image: url("images/pull.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+}
+#box3{/*aux*/
+    width: 31%;
+    margin: auto;
+    border: 3px solid black;
+    height: 45%;
+    text-align: center;
+    background-color: #08122D;
+    color: white;
+}
+#box3:link{
+    text-decoration: none;
+}
+#box3:hover{
+    background-image: url("images/extrot.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+}
+#box4{/*squat*/
+    width: 31%;
+    margin: auto;
+    border: 3px solid black;
+    height: 45%;
+    text-align: center;
+    background-color: #08122D;
+    color: white;
+}
+#box4:link{
+    text-decoration: none;
+}
+#box4:hover{
+    background-image: url("images/squat.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;    
+}
+#box5{/*hipext*/
+    width: 31%;
+    margin: auto;
+    border: 3px solid black;
+    height: 45%;
+    text-align: center;
+    background-color: #08122D;
+    color: white;
+}
+#box5:link{
+    text-decoration: none;
+}
+#box5:hover{
+    background-image: url("images/hipext.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+}
+#box6{/*lower aux*/
+    width: 31%;
+    margin: auto;
+    border: 3px solid black;
+    height: 45%;
+    text-align: center;
+    background-color: #08122D;
+    color: white;
+}
+#box6:link{
+    text-decoration: none;
+}
+#box6:hover{
+    background-image: url("images/kneeflex.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+}
+
+#footlogo{
+    border: 3px solid black;
+    height: 50px;
+    margin: auto;
+    width: 98%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 115, 0);
+    position: fixed;
+    bottom: 0;
+}
+
+#navbar{
+    height: 50px;
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.advanced{
+    list-style-type: none;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-evenly;
+    width: 98%;
+
+}
+.advanced li{
+    display: inline;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: auto;
+}
+.content{
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    border: 3px solid black;
+    background-color: rgb(153, 153, 153);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@media (max-width: 768px){
+    #box1, #box2, #box3, #box4, #box5, #box6{
+        width: 47%;
+        height: 30%;
+    }
+
+    #container a:link{
+        color: red;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #box1{/*presses*/
+        background-image: url("images/press.jpg");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: contain;
+    }
+    #box2{
+        background-image: url("images/pull.jpg");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: contain;
+    }
+
+    #box3{
+        background-image: url("images/extrot.jpg");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: contain;
+    }
+
+    #box4{
+        background-image: url("images/squat.jpg");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: contain;  
+    }
+
+    #box5{
+        background-image: url("images/hipext.jpg");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: contain;
+    }
+
+    #box6{
+        background-image: url("images/kneeflex.jpg");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: contain;
+    }
+    
+}
+
+@media (max-width: 480px){
+    #box1, #box2, #box3, #box4, #box5, #box6{
+        width: 80%;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        height: 35%;
+    }
+    #container a:link{
+        color: red;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #box1{/*presses*/
+        background-image: url("images/press.jpg");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: contain;
+    }
+    #box2{
+        background-image: url("images/pull.jpg");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: contain;
+    }
+
+    #box3{
+        background-image: url("images/extrot.jpg");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: contain;
+    }
+
+    #box4{
+        background-image: url("images/squat.jpg");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: contain;  
+    }
+
+    #box5{
+        background-image: url("images/hipext.jpg");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: contain;
+    }
+
+    #box6{
+        background-image: url("images/kneeflex.jpg");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: contain;
+    }
+}
